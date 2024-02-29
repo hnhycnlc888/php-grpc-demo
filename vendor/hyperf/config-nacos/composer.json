@@ -1,0 +1,58 @@
+{
+    "name": "hyperf/config-nacos",
+    "description": "A nacos adapter for config center component.",
+    "license": "MIT",
+    "keywords": [
+        "php",
+        "swoole",
+        "hyperf",
+        "nacos"
+    ],
+    "type": "library",
+    "homepage": "https://hyperf.io",
+    "support": {
+        "docs": "https://hyperf.wiki",
+        "issues": "https://github.com/hyperf/hyperf/issues",
+        "pull-request": "https://github.com/hyperf/hyperf/pulls",
+        "source": "https://github.com/hyperf/hyperf"
+    },
+    "autoload": {
+        "psr-4": {
+            "Hyperf\\ConfigNacos\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "HyperfTest\\ConfigNacos\\": "tests"
+        }
+    },
+    "require": {
+        "php": ">=8.0",
+        "hyperf/codec": "~3.0.0",
+        "hyperf/config-center": "~3.0.0",
+        "hyperf/contract": "~3.0.0",
+        "hyperf/guzzle": "~3.0.0",
+        "hyperf/nacos": "~3.0.0",
+        "hyperf/support": "~3.0.0",
+        "hyperf/utils": "~3.0.0"
+    },
+    "suggest": {
+        "ext-json": "*",
+        "ext-simplexml": "*",
+        "ext-yaml": "*",
+        "hyperf/event": "Required to use listeners. (~2.2.0)",
+        "hyperf/process": "Required to use processes. (~2.2.0)",
+        "hyperf/framework": "Required to use listeners. (~2.2.0)"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "3.0-dev"
+        },
+        "hyperf": {
+            "config": "Hyperf\\ConfigNacos\\ConfigProvider"
+        }
+    }
+}

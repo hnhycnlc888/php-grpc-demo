@@ -1,0 +1,29 @@
+syntax = "proto3";
+
+option php_generic_services = true;
+
+package grpc.php.telpo;
+
+service hi {
+    rpc sayHello (HiUser) returns (HiReply) {
+    }
+    rpc sayHello1 (HiUser) returns (HiReply) {
+    }
+    rpc sayHello2 (HiUser) returns (HiReply) {
+    }
+    rpc hello (helloReq) returns (HiReply) {
+    }
+}
+
+message HiUser {
+    string name = 1;
+    int32 sex = 2;
+}
+
+message HiReply {
+    string message = 1;
+    HiUser user = 2;
+}
+
+message helloReq {
+}
